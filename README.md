@@ -121,7 +121,7 @@ df = df.select(
 df = df.drop('mod_dt', 'mod_username')
 
 # Rename a column
-df = df.withColumnRenamed('dob', 'date_of_birth')
+df = df.withColumnRenamed('oldname', 'newname')
 
 # Keep all the columns which also occur in another dataset
 df = df.select(*(F.col(c) for c in df2.columns))
