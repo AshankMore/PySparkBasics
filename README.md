@@ -22,7 +22,6 @@ A quick reference guide to the most commonly used patterns and functions in PySp
     - [Repartitioning](#repartitioning)
     - [UDFs (User Defined Functions](#udfs-user-defined-functions)
 
-If you can't find what you're looking for, check out the [PySpark Official Documentation](https://spark.apache.org/docs/latest/api/python/pyspark.sql.html) and add it here!
 
 ## Common Patterns
 
