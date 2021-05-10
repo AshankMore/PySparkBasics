@@ -5,7 +5,7 @@ A quick reference guide to the most commonly used patterns and functions in PySp
 
 #### Table of Contents
 
-- [Configuration & Initializations](#Configuration-&--Initialization)
+- [Configuration](#Configuration)
 - [Common Patterns](#common-patterns)
     - [Importing Functions & Types](#importing-functions--types)
     - [Filtering](#filtering)
@@ -23,7 +23,7 @@ A quick reference guide to the most commonly used patterns and functions in PySp
     - [Repartitioning](#repartitioning)
     - [UDFs (User Defined Functions](#udfs-user-defined-functions)
 
-## Configuration & Initialization
+## Configuration
 SparkContext — provides connection to Spark with the ability to create RDDs
 SQLContext — provides connection to Spark with the ability to run SQL queries on data
 SparkSession — all-encompassing context which includes coverage for SparkContext, SQLContext and HiveContext.
