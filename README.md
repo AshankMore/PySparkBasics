@@ -5,6 +5,7 @@ A quick reference guide to the most commonly used patterns and functions in PySp
 
 #### Table of Contents
 
+- [Configuration & Initializations](#Configuration-&-Initialization)
 - [Common Patterns](#common-patterns)
     - [Importing Functions & Types](#importing-functions--types)
     - [Filtering](#filtering)
@@ -22,6 +23,27 @@ A quick reference guide to the most commonly used patterns and functions in PySp
     - [Repartitioning](#repartitioning)
     - [UDFs (User Defined Functions](#udfs-user-defined-functions)
 
+## Configuration & Initialization
+SparkContext — provides connection to Spark with the ability to create RDDs
+SQLContext — provides connection to Spark with the ability to run SQL queries on data
+SparkSession — all-encompassing context which includes coverage for SparkContext, SQLContext and HiveContext.
+```python
+import pyspark
+from pyspark import SparkContext
+from pyspark.sql import SparkSession
+from pyspark.sql import SQLContext
+
+# create a SparkSession instance with the name moviedb with Hive support enabled
+# https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html
+spark = SparkSession.builder.appName("moviedb").enableHiveSupport().getOrCreate()
+
+# create a SparkContext instance which allows the Spark Application to access 
+# Spark Cluster with the help of a resource manager which is usually YARN or Mesos
+sc = SparkContext.getOrCreate()
+
+# create a SQLContext instance to access the SQL query engine built on top of Spark
+sqlContext = SQLContext(spark)
+```
 
 ## Common Patterns
 
