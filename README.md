@@ -5,7 +5,7 @@ A quick reference guide to the most commonly used patterns and functions in PySp
 
 #### Table of Contents
 
-- [Configuration & Initializations](#Configuration-&-Initialization)
+- [Configuration & Initializations](#Configuration-&--Initialization)
 - [Common Patterns](#common-patterns)
     - [Importing Functions & Types](#importing-functions--types)
     - [Filtering](#filtering)
